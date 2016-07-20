@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melbourne Lipardo - Portfolio</title>
@@ -9,15 +9,17 @@
   </head>
   <body>
     <div class="container">
-      <div class="row" id="header">
-        <div class="col-md-2">
-          <img class="title-logo" class="img-responsive" src="images/udacity_logo.png">
+      <header>
+        <div class="row">
+          <div class="col-md-2">
+            <img class="img-responsive title-logo" src="images/udacity_logo.png" alt="Udacity Logo">
+          </div>
+          <div class="col-md-10 text-right text-uppercase">
+            <h1 class="title-super text-thin">Melbourne Lipardo</h1>
+            <h4>Front-End Ninja</h4>
+          </div>
         </div>
-        <div class="col-md-10 text-right text-uppercase">
-          <h1 class="title-super text-thin">Melbourne Lipardo</h1>
-          <h4>Front-End Ninja</h4>
-        </div>
-      </div>
+      </header>
       <div class="row">
         <div class="col-md-12">
           <hr>
@@ -25,17 +27,17 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <img class="img-responsive" src="images/background_1.png">
+          <img class="img-responsive" src="images/background_1.png" alt="Background">
         </div>
       </div>
-      <div class="row">
+      <section class="row">
         <div class="col-md-12">
           <h2 class="text-muted">Featured Work</h2>
         </div>
-      </div>
-      <div class="row text-center text-uppercase">
+      </section>
+      <section class="row text-center text-uppercase">
         <div class="col-md-6">
-          <img class="img-responsive" src="images/arcade-frogger.jpeg" data-toggle="modal" data-target="#project1">
+          <img class="img-responsive" src="images/arcade-frogger.jpeg" data-toggle="modal" data-target="#project1" alt="Arcade-Frogger">
           <h3>Classic Arcade Frogger</h3>
           <p>
             <a class="portfolio-link" href="https://github.com/mbournehalley/frontend-nanodegree-arcade-game">
@@ -44,33 +46,36 @@
           </p>
         </div>
         <div class="col-md-6">
-          <img class="img-responsive" src="images/Feature_app.jpg" data-toggle="modal" data-target="#project2">
+          <img class="img-responsive" src="images/Feature_app.jpg" data-toggle="modal" data-target="#project2" alt="Feature">
           <h3>Portfolio Framework</h3>
           <p>
             <a class="portfolio-link" href="framework/index.html">Portfolio</a>
           </p>
         </div>
-      </div>
-      <div class="row text-center text-uppercase">
-      <div class="col-md-6">
-        <img class="img-responsive" src="images/Feature_app.jpg" data-toggle="modal" data-target="#project3">
-        <h3>Portfolio with Bootstrap</h3>
-        <p>
-          <a class="portfolio-link" href="portfolio-bootstrap.html">Bootstrap</a>
-        </p>
-      </div>
-      </div>
+      </section>
+      <section class="row text-center text-uppercase">
+        <div class="col-md-6">
+          <img class="img-responsive" src="images/Feature_app.jpg" data-toggle="modal" data-target="#project3" alt="Feature">
+          <h3>Portfolio with Bootstrap</h3>
+          <p>
+            <a class="portfolio-link" href="portfolio-bootstrap.html">Bootstrap</a>
+          </p>
+        </div>
+      </section>
     </div>
+    <footer class="text-center">
+      Copyright (c) 2016 mbournehalley
+    </footer>
 
     <!-- Modal -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Arcade Frogger App</h4>
+            <h4 class="modal-title">Arcade Frogger App</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/arcade-frogger.jpeg">
+            <img class="img-responsive" src="images/arcade-frogger.jpeg" alt="Arcade-Frogger">
             <p class="text-center">
               This was my first project making games in javascript in this class.
               I learned how to use the canvas and javascript.
@@ -83,14 +88,14 @@
       </div>
     </div>
 
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project2" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Portfolio</h4>
+            <h4 class="modal-title">Portfolio</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/Feature_app.jpg">
+            <img class="img-responsive" src="images/Feature_app.jpg" alt="Feature">
               <p class="text-center">
                 My second project was to build my own small CSS framework I could use for future projects.
               </p>
@@ -102,14 +107,14 @@
       </div>
     </div>
 
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="project3" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Portfolio with Bootstrap</h4>
+            <h4 class="modal-title">Portfolio with Bootstrap</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/Feature_app.jpg">
+            <img class="img-responsive" src="images/Feature_app.jpg" alt="Feature">
               <p class="text-center">
                 In this project I learned how to use Bootstrap and applied it to the portfolio page.
               </p>
